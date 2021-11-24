@@ -1,0 +1,129 @@
+<templateSet group="OPENRNDR">
+  <template name="ora" value="fun main() = application { &#10;    program {&#10;        extend {&#10;        }&#10;    }&#10;}" description="Create OPENRNDR application" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="diwt" value="drawer.isolatedWithTarget($RT$) {&#10;$END$&#10;}" description="Drawer isolated with target" toReformat="false" toShortenFQNames="true">
+    <variable name="RT" expression="variableOfType(&quot;org.openrndr.draw.RenderTarget&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="rtcb" value="renderTarget($WIDTH$, $HEIGHT$) {&#10;    colorBuffer()&#10;}" description="RenderTarget with ColorBuffer" toReformat="false" toShortenFQNames="true">
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="cb" value="colorBuffer($WIDTH$, $HEIGHT$)" description="ColorBuffer" toReformat="false" toShortenFQNames="true">
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="bt" value="buildTransform {&#10;    $END$&#10;}" description="Build transform" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="bc" value="contour {&#10;    $END$&#10;}" description="Build contour" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="bs" value="shape {&#10;    $END$&#10;}" description="Build shape" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="v2" value="Vector2($X$, $Y$)" description="Vector2" toReformat="false" toShortenFQNames="true">
+    <variable name="X" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="Y" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="v3" value="Vector3($X$, $Y$, $Z$)" description="Vector3" toReformat="false" toShortenFQNames="true">
+    <variable name="X" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="Y" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="Z" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="v4" value="Vector4($X$, $Y$, $Z$, $W$)" description="Vector4" toReformat="false" toShortenFQNames="true">
+    <variable name="X" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="Y" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="Z" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="W" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="crgb" value="ColorRGBa($R$, $G$, $B$)" description="ColorRGBa" toReformat="false" toShortenFQNames="true">
+    <variable name="R" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <variable name="G" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <variable name="B" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="chsv" value="ColorHSVa($H$, $S$, $V$)" description="ColorHSVa" toReformat="false" toShortenFQNames="true">
+    <variable name="H" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="S" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <variable name="V" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="chsl" value="ColorHSL($H$, $S$, $L$)" description="ColorHSL" toReformat="false" toShortenFQNames="true">
+    <variable name="H" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="S" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <variable name="L" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="wh" value="ColorRGBa.WHITE" description="ColorRGBa.WHITE" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="bl" value="ColorRGBa.BLACK" description="ColorRGBa.BLACK" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="dtr" value="drawer.translate($X$, $Y$)" description="drawer.translate" toReformat="false" toShortenFQNames="true">
+    <variable name="X" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <variable name="Y" expression="" defaultValue="0.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="dsc" value="drawer.scale($SCALE$)" description="drawer.scale" toReformat="false" toShortenFQNames="true">
+    <variable name="SCALE" expression="" defaultValue="1.0" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="dro" value="drawer.rotate($ANGLE$)" description="drawer.rotate" toReformat="false" toShortenFQNames="true">
+    <variable name="ANGLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="esr" value="extend(ScreenRecorder())" description="extend(ScreenRecorder())" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="ess" value="extend(Screenshots())" description="extend(Screenshots())" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>
