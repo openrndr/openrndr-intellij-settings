@@ -32,3 +32,9 @@ This repository provides mainly a configuration for OPENRNDR related Live Templa
 ## Setting up IntelliJ IDEA
 
 ![image](https://user-images.githubusercontent.com/983309/143302815-286639e6-6b74-4d31-a397-8b79d2eed37f.png)
+
+### Caveats
+
+The live templates in this repository will not work if the existing live templates configuration already contains an OPENRNDR group.
+
+
