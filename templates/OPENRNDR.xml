@@ -1,5 +1,5 @@
 <templateSet group="OPENRNDR">
-  <template name="ora" value="fun main() = application { &#10;    program {&#10;        extend {&#10;        }&#10;    }&#10;}" description="Create OPENRNDR application" toReformat="false" toShortenFQNames="true">
+  <template name="ora" value="fun main() = org.openrndr.application { &#10;    program {&#10;        extend {&#10;            $END$&#10;        }&#10;    }&#10;}" description="Create OPENRNDR application" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN_TOPLEVEL" value="true" />
     </context>
@@ -10,43 +10,43 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="rtcb" value="renderTarget($WIDTH$, $HEIGHT$) {&#10;    colorBuffer()&#10;}" description="RenderTarget with ColorBuffer" toReformat="false" toShortenFQNames="true">
+  <template name="rtcb" value="org.openrndr.draw.renderTarget($WIDTH$, $HEIGHT$) {&#10;    colorBuffer()&#10;}" description="RenderTarget with ColorBuffer" toReformat="false" toShortenFQNames="true">
     <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="cb" value="colorBuffer($WIDTH$, $HEIGHT$)" description="ColorBuffer" toReformat="false" toShortenFQNames="true">
+  <template name="cb" value="org.openrndr.draw.colorBuffer($WIDTH$, $HEIGHT$)" description="ColorBuffer" toReformat="false" toShortenFQNames="true">
     <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="bt" value="buildTransform {&#10;    $END$&#10;}" description="Build transform" toReformat="false" toShortenFQNames="true">
+  <template name="bt" value="org.openrndr.math.transforms.buildTransform {&#10;    $END$&#10;}" description="Build transform" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="bc" value="contour {&#10;    $END$&#10;}" description="Build contour" toReformat="false" toShortenFQNames="true">
+  <template name="bc" value="org.openrndr.shape.contour {&#10;    $END$&#10;}" description="Build contour" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="bs" value="shape {&#10;    $END$&#10;}" description="Build shape" toReformat="false" toShortenFQNames="true">
+  <template name="bs" value="org.openrndr.shape.shape {&#10;    $END$&#10;}" description="Build shape" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="v2" value="Vector2($X$, $Y$)" description="Vector2" toReformat="false" toShortenFQNames="true">
+  <template name="v2" value="org.openrndr.math.Vector2($X$, $Y$)" description="Vector2" toReformat="false" toShortenFQNames="true">
     <variable name="X" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <variable name="Y" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="v3" value="Vector3($X$, $Y$, $Z$)" description="Vector3" toReformat="false" toShortenFQNames="true">
+  <template name="v3" value="org.openrndr.math.Vector3($X$, $Y$, $Z$)" description="Vector3" toReformat="false" toShortenFQNames="true">
     <variable name="X" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <variable name="Y" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <variable name="Z" expression="" defaultValue="0.0" alwaysStopAt="true" />
@@ -54,7 +54,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="v4" value="Vector4($X$, $Y$, $Z$, $W$)" description="Vector4" toReformat="false" toShortenFQNames="true">
+  <template name="v4" value="org.openrndr.math.Vector4($X$, $Y$, $Z$, $W$)" description="Vector4" toReformat="false" toShortenFQNames="true">
     <variable name="X" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <variable name="Y" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <variable name="Z" expression="" defaultValue="0.0" alwaysStopAt="true" />
@@ -63,7 +63,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="crgb" value="ColorRGBa($R$, $G$, $B$)" description="ColorRGBa" toReformat="false" toShortenFQNames="true">
+  <template name="crgb" value="org.openrndr.color.ColorRGBa($R$, $G$, $B$)" description="ColorRGBa" toReformat="false" toShortenFQNames="true">
     <variable name="R" expression="" defaultValue="1.0" alwaysStopAt="true" />
     <variable name="G" expression="" defaultValue="1.0" alwaysStopAt="true" />
     <variable name="B" expression="" defaultValue="1.0" alwaysStopAt="true" />
@@ -71,7 +71,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="chsv" value="ColorHSVa($H$, $S$, $V$)" description="ColorHSVa" toReformat="false" toShortenFQNames="true">
+  <template name="chsv" value="org.openrndr.color.ColorHSVa($H$, $S$, $V$)" description="ColorHSVa" toReformat="false" toShortenFQNames="true">
     <variable name="H" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <variable name="S" expression="" defaultValue="1.0" alwaysStopAt="true" />
     <variable name="V" expression="" defaultValue="1.0" alwaysStopAt="true" />
@@ -79,7 +79,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="chsl" value="ColorHSL($H$, $S$, $L$)" description="ColorHSL" toReformat="false" toShortenFQNames="true">
+  <template name="chsl" value="org.openrndr.color.ColorHSLa($H$, $S$, $L$)" description="ColorHSLa" toReformat="false" toShortenFQNames="true">
     <variable name="H" expression="" defaultValue="0.0" alwaysStopAt="true" />
     <variable name="S" expression="" defaultValue="1.0" alwaysStopAt="true" />
     <variable name="L" expression="" defaultValue="1.0" alwaysStopAt="true" />
@@ -87,12 +87,12 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="wh" value="ColorRGBa.WHITE" description="ColorRGBa.WHITE" toReformat="false" toShortenFQNames="true">
+  <template name="wh" value="org.openrndr.color.ColorRGBa.WHITE" description="ColorRGBa.WHITE" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="bl" value="ColorRGBa.BLACK" description="ColorRGBa.BLACK" toReformat="false" toShortenFQNames="true">
+  <template name="bl" value="org.openrndr.color.ColorRGBa.BLACK" description="ColorRGBa.BLACK" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
@@ -116,12 +116,12 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="esr" value="extend(ScreenRecorder())" description="extend(ScreenRecorder())" toReformat="false" toShortenFQNames="true">
+  <template name="esr" value="extend(org.openrndr.ffmpeg.ScreenRecorder())" description="extend(ScreenRecorder())" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="ess" value="extend(Screenshots())" description="extend(Screenshots())" toReformat="false" toShortenFQNames="true">
+  <template name="ess" value="extend(org.openrndr.extensions.Screenshots())" description="extend(Screenshots())" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
