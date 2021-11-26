@@ -35,6 +35,6 @@ This repository provides mainly a configuration for OPENRNDR related Live Templa
 
 ### Caveats
 
-The live templates in this repository will not work if the existing live templates configuration already contains an OPENRNDR group.
+The live templates in this repository will not work if the existing live templates configuration already contains a group called `OPENRNDR`. In that case please rename your existing group and try again.
 
 
