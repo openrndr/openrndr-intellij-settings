@@ -1,5 +1,5 @@
 <templateSet group="OPENRNDR">
-  <template name="ora" value="fun main() = org.openrndr.application { &#10;    program {&#10;        extend {&#10;            $END$&#10;        }&#10;    }&#10;}" description="Create OPENRNDR application" toReformat="false" toShortenFQNames="true">
+  <template name="ora" value="fun main() = org.openrndr.application { &#10;    configure { }&#10;    program {&#10;        extend {&#10;            $END$&#10;        }&#10;    }&#10;}" description="Create OPENRNDR application" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN_TOPLEVEL" value="true" />
     </context>
